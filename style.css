@@ -1,16 +1,81 @@
 @font-face { font-family: Thinkoutside ; src: url('thinkoutside.ttf'); } 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-    
-h1 {
-  font-family: Thinkoutside;
+
+html,body {
+  margin: 0;
+  padding: 0;
 }
 
-p {
-  font-family: Thinkoutside;
-  font-size: 2rem;
-  color: blue;
-}
-
-.otherfont {
+body {
+  background-color: white;
   font-family: 'Lato', sans-serif;
 }
+
+.site-hero {
+  height: 100vh;
+  background-image: url(./resources/blue-bg.png);
+  background-size: cover;
+}
+
+.container-nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+
+/* Two ways to do the same , selecting a class within the img 
+or selection the parents classes until the img.
+ */
+
+ .site-hero a {
+   max-width: 45%;
+   max-height: 45%;
+ }
+
+.site-hero a img {
+  max-width: 45%;
+  max-height: 45%;
+  margin: 4em 3.5em;
+  margin-bottom: 0;
+}
+
+
+.logo {
+  cursor: pointer;
+  margin-bottom: 0;
+  max-height: 1%;
+}
+/* .test {
+  max-width: 50%;
+  max-height: 50%;
+  margin: 0em 4em  ;
+} */
+
+
+ul {
+  margin-top: 0;
+  margin-left: 25em;
+  
+}
+
+
+li {
+
+ display: inline-flex;
+ justify-content: space-between;
+ margin-right: 5em;
+ margin-top: 3.3em;
+ font-size: 1.7rem;
+ font-weight: 600;
+ color: white;
+ cursor: pointer;
+ 
+}
+
+#alumnos {
+  margin-left: 15em;
+}
+
+
+
